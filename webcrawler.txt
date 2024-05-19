@@ -1,0 +1,22 @@
+pip install scrapy - instalar scrapy
+
+entra no arquivo desejado
+
+python -m scrapy startproject (nome)
+
+scrapy crawl (nome dentro da classe)
+scrapy crawl (nome dentro da classe) -o output.json
+
+python -m scrapy shell http://books.toscrape.com/index.html - fazer pesquisas dos itens na página
+exemplos de pesquisas:
+response (verificar quantidade)
+response.css("h1")
+response.css("h1").get()
+response.css("h1::text").get()
+response.css("h1::text").getall()
+response.css(".page-header").get()
+
+sair do shell:
+exit()
+
+usar proxy para evitar ser bloqueado dos sites pelo ip por fazer muitas requisições.
